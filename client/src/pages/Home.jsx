@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import GameList from "../components/GameList";
 
 async function fetchGames() {
-  const response = await fetch("http://localhost:3000/api/games");
+  const response = await fetch("https://game-manager-app-1.onrender.com/api/games");
 
   if (!response.ok) {
     throw new Error("Failed to fetch games");

@@ -9,7 +9,7 @@ import { useForm } from "react-hook-form";
 
 async function fetchGameById(id) {
   const response = await fetch(
-    `http://localhost:3000/api/games/${id}`
+    `https://game-manager-app-1.onrender.com/api/games/${id}`
   );
 
   if (!response.ok) {
@@ -56,7 +56,7 @@ function UpdateGame() {
   // Update game API
   const updateGame = async (updatedGame) => {
     const response = await fetch(
-      `http://localhost:3000/api/games/${id}`,
+      `https://game-manager-app-1.onrender.com/api/games/${id}`,
       {
         method: "PUT",
         headers: {
